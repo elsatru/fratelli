@@ -1,0 +1,275 @@
+html {
+    background-color: #7397b7;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    background-color: white;
+    max-width: 1375px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+header {
+    float: left;
+    width: 20%;
+    padding: 2%;
+    line-height: 50px;
+}
+
+header img {
+    width: 100%;
+}
+
+#menu li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #c0a4a5;
+    text-decoration: none;
+}
+
+
+.main-content {
+    width: 80%;
+    float: right;
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    background-color: white;
+}
+
+.flex-container1 {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 100%;
+    padding: 10px;
+    background-color:white;
+    justify-content: space-around;
+}
+
+.dolce figure {
+    text-align: center; 
+}
+
+.dolce {
+    padding: 0 20px 20px 20px;
+    flex: 1;
+}
+
+h1 {
+	font-family: 'Gloria Hallelujah', cursive;
+    font-size: 60px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    width: 100%;
+    float: right;
+}
+
+h2 {
+	font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+	line-height: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+    color: #c0a4a5;
+    font-size: 35px;
+    padding: 10px 0 20px 15px;
+}
+
+h4 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h6 {
+    color: grey;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+}
+
+p {
+    color: dimgrey;
+    font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+	line-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    }
+
+a {
+	color: black;
+	text-decoration: none;
+    font-weight:900;
+    line-height: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #7397b7;
+    border-radius: 5px;
+    border: solid #7397b7;
+    color: white;
+}
+
+p a:hover {
+    background-color: #7397b7;
+    border-radius: 5px;
+    border: solid #7397b7;
+    color: white;
+}
+
+.formFooter {
+    display:none;
+}
+
+#lowernav {
+    padding-bottom: 20px;
+    padding: 15px;
+}
+
+#lowernav img {
+    border-radius: none;
+    border: none;
+}
+
+.caption {
+    color: black;
+    padding: 5px 0 5px 5px; 
+    width: 66%;
+    font-size: 12px;
+}
+
+.construction {
+    width: 80%;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.changecolour {
+    color: #c0a4a5;
+}
+
+footer {
+    padding: 20px 20px 20px 20px;
+    clear: left;
+    width: 19%;
+}
+
+img {
+    border-radius: 15px;
+    border: solid #c0a4a5;
+}
+
+iframe {
+    border-radius: 15px;
+    border: solid #c0a4a5;
+}
+
+#\38 1065756084360 > div.formFooter {
+    display: none;
+}
+
+.group before,
+.group after {
+    content:"";
+    display: table;   
+}
+
+.group after {
+    clear:both;
+}
+
+.group {
+    zoom: 1;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    
+    header img {
+        width: 50%;
+    }
+      
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        float: none;
+        width: 100%;
+        line-height: 50px;
+
+    }
+    
+}
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
